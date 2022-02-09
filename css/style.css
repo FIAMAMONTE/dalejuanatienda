@@ -1,0 +1,213 @@
+*{ margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: font-family: 'Abel', sans-serif;
+ }
+ /*HEADER*/
+ h1 {
+    color: orange;
+    text-align: center;
+    
+}
+.gallery__Item img{
+    max-width: 320px;
+    border-radius: 50%;
+    
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 7%;
+  
+}
+h2{
+    text-align: center;
+}
+ /*Nav*/
+ nav{margin: auto;}
+
+ .navbar-brand{ border-radius: 40%;}
+
+ /*footer*/
+ 
+ footer{ background-color: black;}
+ 
+ .redes__Contact{ display: flex;
+  height: 80%;
+ align-items: center;
+ justify-content: center;}
+ 
+ .redes__Contact ul li {
+     display: inline-block;
+     margin: 0 15px;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+ }
+ .redes__Contact ul li a{
+     display: block;
+     
+     background: black;
+     color: white;
+     line-height: 50px;
+     font-size: 20px;
+     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2) ;
+     transition: .2s;
+ }
+ .redes__Contact ul:hover a{
+     filter: blur(2px);
+ }
+ .redes__Contact ul li a:hover{
+     filter: none;
+ }
+ .redes__Contact ul li .facebook:hover{
+     background: blue ;
+ }
+ .redes__Contact ul li .instagram:hover{
+     background: purple ;
+ }
+ .redes__Contact ul li .whatsapp:hover{
+     background: green ;
+ }
+ 
+ 
+ /*body pages nosotros*/
+ .grid{
+     display: grid;
+     grid-template-columns:20% 50% 30% ;
+     grid-template-rows: repeat( 4,auto);
+     grid-template-areas: "a a a " ". b ." ". . c";
+     
+     align-items: center;
+     grid: gap 10px; ;
+     
+ }
+ .grid__textG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+    
+     
+ }
+  .grid__parrafoG{
+     grid-area: b;
+     justify-items: center;
+     display: flex;
+     margin-left: 90px;
+     margin-top: 50px;
+ }
+ .grid__imagenG{
+     width: 300px;
+     height: 300px;
+     grid-area: c;
+     justify-items: end;
+ 
+ }
+ /*body page contacto*/
+ .containerF{
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+    
+ 
+ 
+ 
+ }
+ form{
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     width: 40%;
+     height: 80%;
+     
+     
+ }
+ input , textarea{
+     border: none;
+     resize: none;
+     outline: none;
+     padding: 15px;
+     width: 80%;
+     margin: 10px;
+     border-bottom: 2px solid;
+ 
+ }
+ input:hover, textarea:hover{
+     border-bottom-color: orange;
+ 
+ }
+ button{
+     
+     border: none;
+     outline: none;
+     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+     padding: 15px;
+     width: 200px;
+     border-radius: 20px;
+     color: white;
+     box-shadow: rgba(0, 0, 0, .7 );
+ }
+ button:hover{
+     transform: scale(1.05);
+     box-shadow: rgba(0, 0, 0, .5) 0px 0px 10px;
+      
+ }
+ .question__presentation {
+    width: 80%;
+    height: auto;
+
+}
+.question__title {
+    text-align: start;
+}
+ /*mediaqueries*/
+ @media only screen and ( min-width: 768px ) {
+ body {
+     grid-template-areas: "header" "nav" "section" "footer";
+     grid-template-columns: 1fr;
+    
+ }
+ h1 { width: 100%;
+     
+     
+ }
+ 
+ 
+ .gallery{ width: 100%;}
+ 
+ .buttonIndex{
+      text-align: center;
+      
+     }
+ }
+
+
+ @media only screen and (max-width:320px){
+     body {
+         grid-template-areas: "header" "nav" "section" "footer";
+         grid-template-columns: 1fr;
+        
+     }
+     h2 {
+         display: none;
+     }
+     .galleryItem{
+         display: none;
+     }
+     .buttonIndex{
+         text-align: center;
+         margin-bottom: 50%;
+     }
+ 
+ 
+    }  
+
+ 
+   
