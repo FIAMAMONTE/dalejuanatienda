@@ -141,40 +141,33 @@ footer {
   position: absolute;
   top: 200px;
   font-size: 100px;
+  justify-items: center;
+}
+
+.grid__medium .grid__text p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  padding: 60px;
 }
 
 /*body page contacto*/
-.containerF {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.grid__containerOne {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 10px;
-  width: 40%;
-  height: 80%;
+  position: absolute;
+  display: flexbox;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 input, textarea {
@@ -183,31 +176,29 @@ input, textarea {
   outline: none;
   padding: 15px;
   width: 80%;
-  margin: 10px;
-  border-bottom: 2px solid;
+  margin: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 
-input:hover, textarea:hover {
-  border-bottom-color: orange;
+input:focus, textarea:focus {
+  border-bottom-color: #d57eeb;
 }
 
 button {
   border: none;
   outline: none;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   padding: 15px;
-  width: 200px;
-  border-radius: 20px;
+  border-radius: 5px;
+  width: 150px;
   color: white;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.7);
-          box-shadow: rgba(0, 0, 0, 0.7);
 }
 
 button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
-          box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
 }
 
 .questiontitle {
@@ -217,10 +208,14 @@ button:hover {
   margin: 60px -20px;
 }
 
+.container_accordion {
+  width: 90%;
+}
+
 .accordion-item {
   background-color: transparent;
   border: none;
-  padding: 0;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
