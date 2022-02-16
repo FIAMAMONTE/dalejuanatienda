@@ -2,7 +2,7 @@
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Bebas Neue';
 }
 
 /*HEADER*/
@@ -10,6 +10,7 @@ h1 {
   color: orange;
   text-align: center;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .gallery__Item img {
@@ -36,6 +37,7 @@ h1 {
 
 h2 {
   text-align: center;
+  overflow: hidden;
 }
 
 /*Nav*/
@@ -161,13 +163,19 @@ footer {
 }
 
 form {
-  position: absolute;
-  display: flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   width: 100%;
   height: 100vh;
   background-color: white;
   padding: 20px;
   text-align: center;
+  overflow: hidden;
 }
 
 input, textarea {
@@ -187,6 +195,7 @@ input:focus, textarea:focus {
 }
 
 button {
+  overflow: hidden;
   border: none;
   outline: none;
   background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
@@ -202,6 +211,7 @@ button:hover {
 }
 
 .questiontitle {
+  overflow: hidden;
   font-size: 25px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -213,6 +223,7 @@ button:hover {
 }
 
 .accordion-item {
+  overflow: hidden;
   background-color: transparent;
   border: none;
   padding: 10px;
@@ -247,7 +258,7 @@ button:hover {
 }
 
 /*mediaqueries*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px) {
   body {
         grid-template-areas: "header" "nav" "section" "footer";
     -ms-grid-columns: 1fr;
@@ -256,33 +267,38 @@ button:hover {
   h1 {
     width: 100%;
   }
-  .gallery {
-    width: 100%;
-  }
   .buttonIndex {
     text-align: center;
+    overflow: hidden;
+  }
+  .container-fluid {
+    width: auto;
+    height: auto;
+  }
+  .carousel-inner img {
+    width: auto;
+    height: auto;
+  }
+  nav {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .gallery__Item img {
+    width: 45%;
+    height: 45%;
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   body {
-        grid-template-areas: "header" "nav" "section" "footer";
+        grid-template-areas: "nav"  "section" "footer";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .navbar-toggler {
-    width: 60px;
-    height: 60px;
-  }
-  h2 {
-    display: none;
-  }
-  .gallery {
-    display: none;
-  }
   .buttonIndex {
     text-align: center;
-    margin-bottom: 50%;
+    margin-bottom: 10%;
   }
   .container-fluid {
     width: auto;
@@ -296,6 +312,21 @@ button:hover {
     visibility: visible;
     margin: auto;
     padding-bottom: 100px;
+  }
+  .grid__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid__left, .grid__right {
+    display: none;
+  }
+  .container_accordion {
+    width: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
