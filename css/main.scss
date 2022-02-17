@@ -1,9 +1,11 @@
 *{ margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-   font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue';
  }
+
  /*HEADER*/
+
  h1 {
     color: orange;
     text-align: center;
@@ -21,8 +23,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-  margin: 10%;
+  text-align:center;
+  padding: 5px;
  
   
 }
@@ -30,36 +32,37 @@ h2{
     text-align: center;
     overflow: hidden;
 }
- /*Nav*/
- nav{margin: auto;}
+.containerButton {
+    text-align: center;
+}
 
- .navbar-brand{ border-radius: 40%;}
+ /*Nav*/
+
+ nav {margin: auto;}
+
+ .navbar-brand { border-radius: 40%;}
  /*carrousel*/
 
  
 
  /*footer*/
  
- footer{ background-color: black;
-    
-   
-}
+ footer { background-color: black; }
  
- .redes__Contact{ 
+ .redes__Contact { 
      display: flex;
     padding: 0px 10px;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center; }
  
  .redes__Contact ul li {
      display: inline-block;
      margin: 10px;
      width: 50px;
      height: 50px;
-     text-align: center;
- }
- .redes__Contact ul li a{
+     text-align: center; }
+
+ .redes__Contact ul li a {
      display: block;
      padding: 0% 10px;
      background: black;
@@ -87,63 +90,58 @@ h2{
  
  
  /*body pages nosotros*/
+
  .grid__container{ 
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;} 
 
-     .grid__right{
+.grid__right{
     padding: 5px ; 
      margin : 3px
     }
-    .grid__left {
+.grid__left {
         padding: 5px;
         margin: 3px;
     }
-    .grid__medium{
+.grid__medium{
         
         padding: 5px;
         margin: 3px;
         position: relative;
 
     }
-    .grid__medium img{
+.grid__medium img{
         opacity: 0.5;
     }
-    .grid__text {
+.grid__text {
         position: absolute;
         top: 200px ;
         font-size: 100px;
        justify-items: center;
         
      }
-     .grid__medium .grid__text  p{
+.grid__medium .grid__text  p{
          align-items: center;
          font-size: 25px;
          padding: 60px;
      }
     
-     
-     
-     
-     
-   
-     
- /*body page contacto*/
+/*body page contacto*/
+
  .grid__containerOne{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; } 
 
-form{
+ form{
     display: flex;
     flex-flow: column;
-    width: 100%;
-    height: 100vh;
+  
     background-color: white;
-    padding: 20px;
+    align-items: center;
     text-align: center;
     overflow: hidden;
 }
-input,textarea{
+ input,textarea{
     border: none;
     resize: none;
     outline: none;
@@ -157,35 +155,35 @@ input,textarea{
 input:focus , textarea:focus{
     border-bottom-color:  #d57eeb ;
 }
- button{
+.buttonIndex{
      overflow: hidden;
      border: none;
      outline: none;
      background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
      padding: 15px;
      border-radius: 5px;
-     width: 150px;
+     width: 125px;
      color: white;
     }
-button:hover{
+.buttonIndex:hover{
     transform: scale( 1.05);
     
 }
- //PAGES PREGUNTAS FRECUENTES//
+//PAGES PREGUNTAS FRECUENTES//
  
- .questiontitle{
+.questiontitle{
      overflow: hidden;
      font-size: 15px + 10px;
      text-decoration-line: underline;
      margin: 60px -20px ;
 
  }
- .container_accordion{
+.container_accordion{
      
      width: 90%;
  }
  
- .accordion-item{
+.accordion-item{
      overflow: hidden;
      background-color: transparent;
      border: none;
@@ -194,7 +192,7 @@ button:hover{
     
 
  }
- .accordion-button{
+.accordion-button{
      
      width: 200 - 100;
      height: 60px;
@@ -206,7 +204,7 @@ button:hover{
 
  //location//
 
-  .location{ 
+.location{ 
    visibility: none;
    text-align: center;
    font-size: 30px;
@@ -223,14 +221,8 @@ button:hover{
    
    }
    
-  
+   /*mediaqueries*/ 
 
-
-
-
-
-
- /*mediaqueries*/
  @media only screen and (min-width: 320px) {
  body { grid-template-areas: "header" "nav" "section" "footer";
         grid-template-columns: 1fr; }
@@ -247,10 +239,8 @@ button:hover{
     width: auto;
     height: auto;}
 nav  { align-self: center;}
-.gallery__Item img{ width: 45%;
-height: 45%;}
+
 }
- 
  
 
 
@@ -260,8 +250,8 @@ height: 45%;}
          grid-template-columns: 1fr ;}
         
     .buttonIndex{
-         text-align: center;
-         margin-bottom: 10%;}
+         text-align: center; 
+            overflow: hidden;}
     .container-fluid{
          width: auto;
          height: auto;}
@@ -282,5 +272,14 @@ height: 45%;}
 
     .container_accordion     
       { width: auto;}
+      .gallery__Item  img { 
+        width: 105px;
+        height: 105px;
+        
+      
+    
+         }
+
+
 
 }
