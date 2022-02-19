@@ -11,6 +11,7 @@
     text-align: center;
     font-weight: bold;
     overflow: hidden;
+    font-weight: bolder;
     
 }
 .gallery__Item img{
@@ -113,18 +114,12 @@ h2{
 .grid__medium img{
         opacity: 0.5;
     }
-.grid__text {
-        position: absolute;
-        top: 200px ;
-        font-size: 100px;
-       justify-items: center;
-        
-     }
+
 .grid__medium .grid__text  p{
          align-items: center;
          font-size: 25px;
          padding: 60px;
-     }
+    }
     
 /*body page contacto*/
 
@@ -251,7 +246,8 @@ nav  { align-self: center;}
         
     .buttonIndex{
          text-align: center; 
-            overflow: hidden;}
+         overflow: hidden;
+         margin-bottom: 5px;}
     .container-fluid{
          width: auto;
          height: auto;}
@@ -265,7 +261,8 @@ nav  { align-self: center;}
     .grid__container { 
          display: flex; 
          width: auto;
-         justify-content: center;} 
+         justify-content: center;
+        background-color: black;} 
 
     .grid__left , .grid__right{  
         display :none; }
@@ -278,6 +275,10 @@ nav  { align-self: center;}
         
       
     
+         }
+         .grid__medium{
+             background-color: black;
+             color: white;
          }
 
 

@@ -11,6 +11,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   overflow: hidden;
+  font-weight: bolder;
 }
 
 .gallery__Item img {
@@ -139,13 +140,6 @@ footer {
 
 .grid__medium img {
   opacity: 0.5;
-}
-
-.grid__text {
-  position: absolute;
-  top: 200px;
-  font-size: 100px;
-  justify-items: center;
 }
 
 .grid__medium .grid__text p {
@@ -297,6 +291,7 @@ input:focus, textarea:focus {
   .buttonIndex {
     text-align: center;
     overflow: hidden;
+    margin-bottom: 5px;
   }
   .container-fluid {
     width: auto;
@@ -319,6 +314,7 @@ input:focus, textarea:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: black;
   }
   .grid__left, .grid__right {
     display: none;
@@ -329,6 +325,10 @@ input:focus, textarea:focus {
   .gallery__Item img {
     width: 105px;
     height: 105px;
+  }
+  .grid__medium {
+    background-color: black;
+    color: white;
   }
 }
 /*# sourceMappingURL=main.css.map */
