@@ -37,6 +37,8 @@ h1 {
 h2 {
   text-align: center;
   overflow: hidden;
+  color: violet;
+  font-size: 40px;
 }
 
 .containerButton {
@@ -142,12 +144,12 @@ footer {
   opacity: 0.5;
 }
 
-.grid__medium .grid__text p {
+p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
-  padding: 60px;
+  padding: 0px 40px;
 }
 
 /*body page contacto*/

@@ -32,6 +32,8 @@
 h2{
     text-align: center;
     overflow: hidden;
+    color: violet;
+    font-size: 40px;
 }
 .containerButton {
     text-align: center;
@@ -115,10 +117,10 @@ h2{
         opacity: 0.5;
     }
 
-.grid__medium .grid__text  p{
+ p{
          align-items: center;
          font-size: 25px;
-         padding: 60px;
+         padding: 0px 40px;
     }
     
 /*body page contacto*/
