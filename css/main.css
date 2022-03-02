@@ -255,6 +255,12 @@ input:focus, textarea:focus {
   color: black;
 }
 
+/*page tienda*/
+.photoadvertencia {
+  margin-left: 200px;
+  padding: 10px;
+}
+
 /*mediaqueries*/
 @media only screen and (min-width: 320px) {
   body {
@@ -331,6 +337,11 @@ input:focus, textarea:focus {
   .grid__medium {
     background-color: black;
     color: white;
+  }
+  .photoadvertencia img {
+    margin: auto;
+    padding: auto;
+    width: 320px;
   }
 }
 /*# sourceMappingURL=main.css.map */
